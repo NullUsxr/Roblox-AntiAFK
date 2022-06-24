@@ -19,9 +19,9 @@ print("AntiAFK is now active")
 while 1 == 1:
     cyclecount = cyclecount + 1
     tt = 20 * cyclecount
-    time.sleep(1200)
+    time.sleep(1000)  # 16m40s because being afk kicked over 1100.
     notify("NullUsxrs AntiAFK Program", "Please make ROBLOX the active window within 20 seconds")
-    time.sleep(20)
+    time.sleep(20)  # Total "AFK" time 17m00s
     pyautogui.keyDown("DOWN")
     time.sleep(1)
     pyautogui.keyUp("DOWN")
