@@ -8,7 +8,7 @@ platform = platform.system()
 if platform.lower == 'windows':
     import pydirectinput
     print("NOTICE: At this time, push notifications are not available for Windows.")
-else:
+if platform.lower() == 'darwin':
     import pyautogui
 
 
