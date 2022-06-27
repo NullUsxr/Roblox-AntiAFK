@@ -32,13 +32,13 @@ while 1 == 1:
     if platform.lower() == 'darwin':
         notify("NullUsxrs AntiAFK Program", "Please make ROBLOX the active window within 20 seconds")
         time.sleep(20)
-        pyautogui.keyDown("DOWN")
+        pyautogui.keyDown('LEFT')
         time.sleep(1)
-        pyautogui.keyUp("DOWN")
+        pyautogui.keyUp('LEFT)
     if platform.lower() == 'windows':
         print("Please make ROBLOX the active window within 20 seconds")
         time.sleep(20)
-        pydirectinput.keyDown("DOWN")
+        pydirectinput.keyDown('LEFT')
         time.sleep(1)
-        pydirectinput.keyUp("DOWN")
+        pydirectinput.keyUp('LEFT)
     print("Cycles:", cycle_count)
