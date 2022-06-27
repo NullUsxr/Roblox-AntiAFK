@@ -35,7 +35,7 @@ while 1 == 1:
         pyautogui.keyDown("DOWN")
         time.sleep(1)
         pyautogui.keyUp("DOWN")
-    if platform.lower() == 'Windows':
+    if platform.lower() == 'windows':
         print("Please make ROBLOX the active window within 20 seconds")
         time.sleep(20)
         pydirectinput.keyDown("DOWN")
