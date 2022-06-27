@@ -34,11 +34,11 @@ while 1 == 1:
         time.sleep(20)
         pyautogui.keyDown('LEFT')
         time.sleep(1)
-        pyautogui.keyUp('LEFT)
+        pyautogui.keyUp('LEFT')
     if platform.lower() == 'windows':
         print("Please make ROBLOX the active window within 20 seconds")
         time.sleep(20)
         pydirectinput.keyDown('LEFT')
         time.sleep(1)
-        pydirectinput.keyUp('LEFT)
+        pydirectinput.keyUp('LEFT')
     print("Cycles:", cycle_count)
