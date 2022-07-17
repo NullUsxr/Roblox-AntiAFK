@@ -18,7 +18,10 @@ A simple python script to prevent you from being AFK kicked on Roblox.
 ### Linux
 1. Download the latest *main.py* from the versions folder
 2. Download the following dependency: `pyautogui`
-  2a. Arch-based Linux additional dependencies: `sudo pacman -S tk`
-  2b. Debian-based Linux additional dependencies: `sudo apt-get install scrot python3-tk python3-dev
+
+      + Arch-based Linux additional dependencies: `sudo pacman -S tk`
+  
+      + Debian-based Linux additional dependencies: `sudo apt-get install scrot python3-tk python3-dev
+  
 3. Run the program
 4. Make Roblox the active window when the console alert comes up
