@@ -1,4 +1,4 @@
-# NullUsxr 2020 | Roblox AntiAFK program
+# NullUsxr 2022 | Roblox AntiAFK program
 import time
 import pyautogui
 print("Starting...")
