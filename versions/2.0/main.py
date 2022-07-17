@@ -1,10 +1,10 @@
 # Anti-AFK for ROBLOX
 # NullUsxr 2022
-# Note: Use vars for push notifs, saves space
 import os
 import platform
 import time
-import subprocess
+start = "AntiAFK is now active"
+active = "Please make ROBLOX the active window within 20 seconds"
 print("[INFO] Starting...")
 platform = platform.system()
 
@@ -12,14 +12,15 @@ if platform.lower == 'windows':
     import pydirectinput
     from plyer import notification
 
-    print("[ALERT] At this time, push notifications are not available for Windows.")
 else:
     import pyautogui
-
+    
+if platform.lower == 'linux':
+    import subprocess
 
 def linuxnotif(message):
     subprocess.run(
-        ["notify-send", "-u", "normal", "-t", "5000", "NullUsxrs AntiAFK Program", message], check=True)
+        ["notify-send", "-u", "normal", "-t", "5000", message, "NullUsxrs AntiAFK Program"], check=True)
 
 
 def notify(text):  # Push Notifications for macOS
@@ -42,7 +43,7 @@ while 1 == 1:
     if platform.lower() == 'windows':
         notification.notify(
             title='NullUsxrs AntiAFK Program',
-            message='Please make ROBLOX the active window within 20 seconds',
+            message=active,
             app_icon=None,
             timeout=10,
         )
@@ -52,10 +53,9 @@ while 1 == 1:
         pydirectinput.keyUp('LEFT')
     else:
         if platform.lower() == 'darwin':
-            notify("Please make ROBLOX the active window within 20 seconds")
+            notify(active)
         if platform.lower() == 'linux':
-            linuxnotif("Please make ROBLOX the active window within 20 seconds")
-        print("[ALERT] Please make ROBLOX the active window within 20 seconds")
+            linuxnotif(active)
         time.sleep(20)
         pyautogui.keyDown('LEFT')
         time.sleep(1)
