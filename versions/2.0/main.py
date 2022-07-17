@@ -3,10 +3,9 @@
 import os
 import platform
 import time
-
+print("[INFO] Starting...")
 start = "AntiAFK is now active"
 active = "Please make ROBLOX the active window within 20 seconds"
-print("[INFO] Starting...")
 platform = platform.system()
 if platform == 'Linux':
     import subprocess
