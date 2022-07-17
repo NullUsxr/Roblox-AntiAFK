@@ -19,7 +19,7 @@ A simple python script to prevent you from being AFK kicked on Roblox.
 1. Download the latest *main.py* from the versions folder
 2. Download the following dependency: `pyautogui`
 
-      + Arch-based Linux additional dependencies: `sudo pacman -S tk`
+      + Arch-based Linux additional dependencies: `sudo pacman -Syu tk python3`
   
       + Debian-based Linux additional dependencies: `sudo apt-get install scrot python3-tk python3-dev`
   
